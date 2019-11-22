@@ -1,4 +1,4 @@
-import React, {useContext, useRef, useEffect} from 'react'
+import React, {useContext, useRef} from 'react'
 import { ConfigContext } from './App'
 
 function Description(){
@@ -9,14 +9,7 @@ function Description(){
         ref.current.focus()
         console.log(ref.current.value)
     }
-
-    useEffect(()=>{
-        console.log('mounted')
-
-        return (
-            console.log('unmounted')
-        )
-    },[])
+    console.log('description')
 
     return(
         <div>
